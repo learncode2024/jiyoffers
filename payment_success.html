@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from vara.navratrisale.org.in/payment_success.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2024 10:51:28 GMT -->
+<head>
+      
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11441133247"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11441133247');
+</script>
+      
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Success</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 60px;
+      }
+      .success-message {
+        font-size: 24px;
+        color: green;
+      }
+      .amount {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        // Get the selected value from localStorage
+        const selectedValue = localStorage.getItem("selectedValue");
+
+        // Display the selected value on the success page
+        if (selectedValue) {
+          document.getElementById("payment-amount").innerText = selectedValue;
+        } else {
+          document.getElementById("payment-amount").innerText = "Unknown";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="success-message">
+      Payment Successful!
+    </div>
+    <div>
+      You have paid ₹<h1><span id="payment-amount"></span></h1>
+    </div>
+     <div>
+      <h2>YOUR RECHARGE IS PROCESSED.....</h2>
+    </div>
+  </body>
+
+<!-- Mirrored from vara.navratrisale.org.in/payment_success.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2024 10:51:28 GMT -->
+</html>
